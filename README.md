@@ -7,30 +7,32 @@
 
 ---
 
+## French vACC AVISO Map  
 
+A map displaying the available, work-in-progress and planned airports is available [here](https://www.google.com/maps/d/viewer?mid=1BH-EmsmISqlP5sPrPS61wtXdW6Of-q0y&usp=sharing)  
 
-# Standard de design
+# Design standard  
 
-# Consignes générales
+## General guidelines  
 
+- As few points as possible should be used to maintain EuroScope's performance while ensuring a sufficient level of accuracy (smooth curves, etc.).
+- Only “drivable” areas should be drawn. Consequently, shoulders will not be drawn as aprons, taxiways, or runways.
+- To optimize the number of polygons, overlapping polygons should be preferred.
+- The associated freetext (taxiways, VFR points and gates) should be updated consequently
 
-- Le moins de points possible doit être utilisé, afin de conserver les performances d'EuroScope, tout en conservant une niveau de précision suffisant (courbes lisses etc...).
-- Ne doivent être dessinées que les zones "roulables". Par conséquent, les accotements ne seront pas dessinées en tant qu'apron, taxiway ou piste.
-- Afin d'optimiser le nombre de polygone, la superposition des différents polygones sera priviliégiée.
+## Colors  
 
-# Couleurs
-
-- Les pistes doivent être définies en polygones à part, couleur COLOR_RunwayConcrete
-- Les pistes en herbes doivent être définies en polygone à part, couleur COLOR_RunwayGrass
-- Les taxiways doivent être définies en polygones à part, couleur COLOR_HardSurface2
-- Les aprons doivent être définis en polygones à part, couleur COLOR_HardSurface3
-- Les zones d'herbes doivent être définies en polygones à part, couleur COLOR_GrasSurface
-- Les batiments doivent être définis en polygones à part, couleur COLOR_Building
-- Les points d'attente CAT I doivent être définis en polygones à part, couleur COLOR_Stopbar
-- Les points d'attente CAT III doivent être définis en polygones à part, couleur COLOR_TaxiwayOrange
-- - Les points d'attente intermédiaires doivent être définis en polygones à part, couleur COLOR_TaxiwayOrange
-- Les zones désafectées doivent être définies en polygones à part, couleur COLOR_HardSurface4
-- Les zones chevrons doivent être définies en polygones à part, couleur COLOR_HardSurface4
-- Les lignes médianes des portes doivent être définis en 'path' (rubrique [GEO]) à part, couleur COLOR_Taxiway
-
-Pour toute question ou problème en rapport avec la création d'un AVISO, rendez vous directement sur le Discord de French vACC.
+- **Runways** must be defined as separate polygons, color **COLOR_RunwayConcrete**
+- **Grass runways** must be defined as separate polygons, color **COLOR_RunwayGrass**
+- **Taxiways** must be defined as separate polygons, with the color **COLOR_HardSurface2**
+- **Grass taxiways** must be defined as separate polygons, with the color **COLOR_GrassSurface2**
+- **Aprons** must be defined as separate polygons, with the color **COLOR_HardSurface3**
+- **Grass areas** must be defined as separate polygons, color **COLOR_GrasSurface**
+- **Buildings** must be defined as separate polygons, color **COLOR_Building**
+- **CAT I holding points** must be defined as separate polygons, color **COLOR_Stopbar**
+- **CAT III holding points** must be defined as separate polygons, color **COLOR_TaxiwayOrange**
+- **Unusable paved areas** must be defined as separate polygons, color **COLOR_HardSurface4**
+- **Gate centerlines** must be defined as separate lines (under the [GEO] section), using the color **COLOR_Taxiway**
+- **Intermediate holding points** must be defined as dashed lines, using the color **COLOR_TaxiwayOrange**
+  
+If you have any questions or issues regarding the creation or updating of an AVISO, please visit the French vACC Discord server.
